@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-fernalion-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-fernalion-700 transition-all duration-300 transform hover:scale-105;
+  }
+  
+  .btn-secondary {
+    @apply border-2 border-fernalion-600 text-fernalion-600 px-6 py-3 rounded-lg font-semibold hover:bg-fernalion-600 hover:text-white transition-all duration-300;
+  }
+  
+  .card-luxury {
+    @apply bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-fernalion-600 to-fernalion-800 bg-clip-text text-transparent;
+  }
+  
+  .luxury-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
