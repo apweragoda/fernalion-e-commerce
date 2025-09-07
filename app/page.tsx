@@ -302,8 +302,8 @@ export default function HomePage() {
               />
               
               <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-lg p-3 shadow-lg">
-                <p className="text-gray-900 font-semibold text-sm">Est. 2024</p>
-                <p className="text-gray-600 text-xs">Katunayake, Sri Lanka</p>
+                <p className="text-gray-900 font-semibold text-sm">Est. 2020</p>
+                <p className="text-gray-600 text-xs">Negombo, Sri Lanka</p>
               </div>
             </div>
           </div>
